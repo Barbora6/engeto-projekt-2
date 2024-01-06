@@ -1,0 +1,482 @@
+:root {
+  --color-dark-mode: rgb(34, 37, 178);
+  --color-light-mode: rgb(233, 234, 251);
+  --color-background: rgb(255, 250, 252);
+  --color-white: #ffff;
+  --color-black: #000;
+  --color-section: rgb(101, 30, 45);
+  --color-btn: #f44336;
+  --color-red: red;
+  --color-input: #f5f5f5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: var(--color-white);
+  font-weight: 400;
+  height: 70px;
+}
+.logo {
+  flex-grow: 1;
+  z-index: 1;
+  position: relative;
+  top: 40px;
+  right: 220px;
+}
+.logo img {
+  width: 120px;
+  border-radius: 50%;
+  margin-left: 260px;
+}
+.mode-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 20px;
+}
+
+.mode-btn button {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 20px;
+  margin: 20px;
+  transition: 0.5s;
+}
+.light {
+  position: absolute;
+  right: 100px;
+  bottom: 0;
+}
+.dark {
+  position: absolute;
+  right: 220px;
+  bottom: 0;
+}
+.light {
+  background-color: var(--color-light-mode);
+  color: var(--color-dark-mode);
+}
+.light:hover {
+  background-color: var(--color-dark-mode);
+  color: var(--color-light-mode);
+}
+
+.dark {
+  background-color: var(--color-dark-mode);
+  color: var(--color-light-mode);
+}
+
+.dark:hover {
+  background-color: var(--color-light-mode);
+  color: var(--color-dark-mode);
+}
+
+/*--------  Navigace  ------------------------*/
+nav {
+  margin-right: 30px;
+}
+header nav li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 60px;
+}
+nav li a {
+  text-decoration: none;
+  color: var(--color-dark-mode);
+  font-size: 20px;
+  font-weight: 600;
+}
+nav li a:hover {
+  text-decoration: underline;
+  font-size: 20px;
+  transition: 0.5s;
+}
+/*-------------------------------------------------------*/
+.menu-icon {
+  display: none;
+  margin-right: 30px;
+}
+#welcome {
+  min-height: calc(100vh - 70px);
+  background-image: url(images/14.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  position: relative;
+}
+.welcome-title {
+  font-size: 44px;
+  font-weight: 200;
+  color: var(--color-white);
+  position: absolute;
+  top: 20px;
+  left: 170px;
+}
+
+/*-----------------------------------*/
+#hero {
+  width: 80%;
+  margin: 0 auto;
+  /*padding: 25px;*/
+  padding-top: 80px;
+  padding-bottom: 150px;
+  background-color: var(--color-input);
+}
+.hero-wrapper {
+  width: 100%;
+  display: flex;
+}
+.hero-title {
+  border: 1px solid var(--color-red);
+  padding: 10px 20px;
+  width: 150px;
+  border-radius: 8px;
+  margin-top: 10px;
+  text-align: center;
+}
+.about-us {
+  flex-basis: 50%;
+  padding: 30px 2px;
+}
+
+.about-us img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.about-us h2 {
+  padding-top: 0;
+  font-size: 26px;
+  text-align: center;
+  padding: 25px;
+}
+
+.about-us p {
+  padding-top: 15px 0 25px;
+  margin: 20px;
+}
+
+.red-btn {
+  border: 1px solid var(--color-btn);
+  background: transparent;
+  text-decoration: none;
+  color: var(--color-btn);
+  padding: 10px 40px;
+  border-radius: 8px;
+  position: relative;
+  left: 200px;
+  cursor: pointer;
+}
+
+.red-btn:hover {
+  color: var(--color-white);
+}
+
+/*----------Photogalerie------------------*/
+#photogalerie {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.photo-title {
+  border: 1px solid var(--color-btn);
+  padding: 10px 20px;
+  width: 100px;
+  border-radius: 8px;
+  margin-top: 50px;
+}
+
+.photogalerie h2 {
+  padding-top: 50px;
+  text-align: center;
+}
+.photo-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 80%;
+  padding: 20px 0;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  background-color: var(--color-dark-mode);
+}
+.photo-wrapper img {
+  width: 300px;
+  height: 200px;
+  border-radius: 8px;
+}
+/*------------- ball  --------------------*/
+.section-wrapper h2 {
+  text-align: center;
+  padding: 25px;
+  cursor: pointer;
+  color: var(--color-white);
+}
+.section-wrapper {
+  background-color: var(--color-dark-mode);
+  width: 100%;
+  margin: 0 auto;
+}
+.wrapper-ball {
+  max-width: 30%;
+  margin: 0 auto;
+}
+.photogalerie-ball img {
+  width: 100%;
+}
+.photogalerie-ball {
+  display: flex;
+  width: 303px;
+  height: 240px;
+}
+
+/* -----------  Formulář  ----------- */
+
+.container-form {
+  background-color: var(--color-white);
+  width: 550px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 50px;
+}
+
+form {
+  background-color: var(--color-dark-mode);
+  display: flex;
+  flex-direction: column;
+  padding: 2vw 4vw;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 10px;
+}
+.form h1,
+h2 {
+  color: var(--color-dark-mode);
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+form input,
+form textarea {
+  border: 0;
+  margin: 10px 0;
+  padding: 20px;
+  outline: none;
+  background-color: var(--color-input);
+  font-size: 16px;
+}
+
+.notificationName,
+.notificationEmail,
+.notificationPhone {
+  display: none;
+  color: var(--color-btn);
+  margin-top: 10px;
+}
+
+form input[type="submit"] {
+  padding: 15px;
+  background: #ff5361;
+  color: #fff;
+  font-size: 18px;
+  border: 0;
+  border-radius: 30px;
+  outline: none;
+  cursor: pointer;
+  width: 150px;
+  margin: 20px auto 0;
+}
+
+/* ---------- Music, Chasa  ----------------- */
+
+#music,
+#traditions {
+  width: 80%;
+  margin: 0 auto;
+  background-color: var(--color-input);
+  padding-top: 35px;
+}
+
+.chasa-wrapper {
+  display: flex;
+  padding: 20px;
+  width: 100%;
+  height: 550px;
+}
+
+.chasa {
+  width: 50%;
+  text-align: initial;
+}
+
+.chasa h2 {
+  padding-top: 15px;
+}
+
+.dance-picture {
+  width: 70%;
+  padding: 50px 0 0 20px;
+}
+
+.dance-picture img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+#choirs-wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.men-choir-wrapper,
+.women-choir-wrapper {
+  display: flex;
+  margin-top: 150px;
+  width: 100%;
+}
+
+.men-choir-wrapper {
+  padding-top: 40px;
+}
+
+.men-choir,
+.women-choir {
+  width: 50%;
+  padding-top: 20px;
+  margin: 25px;
+}
+
+.women-choir-picture {
+  width: 50%;
+  padding-top: 40px;
+}
+
+.men-choir-picture {
+  width: 50%;
+}
+
+.men-choir-picture img,
+.women-choir-picture img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+#music {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.music-picture img {
+  width: 70%;
+  border-radius: 8px;
+  margin-left: 120px;
+}
+
+.cimbal-music {
+  width: 50%;
+  margin-right: 50px;
+}
+
+.cimbal-music-wrapper {
+  width: 100%;
+  padding: 30px;
+  display: flex;
+}
+
+.zandar-picture img {
+  width: 100%;
+  max-width: 70%;
+  border-radius: 8px;
+  margin-left: 120px;
+}
+
+.cimbal-music-zandar-wrapper {
+  width: 100%;
+  display: flex;
+  padding: 50px;
+}
+
+.cimbal-music-zandar {
+  width: 60%;
+  margin-right: 60px;
+}
+/* ----------  Všeobecné styly ------------- */
+
+.shadow-lg {
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(150, 150, 150, 0.75);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(150, 150, 150, 0.75);
+  box-shadow: 0px 0px 10px 0px rgba(150, 150, 150, 0.75);
+}
+
+/*---------- Footer -------------*/
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+}
+.footer h4 {
+  margin-bottom: 25px;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+.icons .fa-brands {
+  color: var(--color-red);
+  font-size: 26px;
+  margin: 0 13px;
+  cursor: pointer;
+  padding: 18px 0;
+  transition: 0.5s;
+}
+
+.icons .fa-brands:hover {
+  transform: translateY(-7px);
+}
+
+.fa-regular {
+  color: var(--color-red);
+  font-size: 22px;
+}
+
+/* ----------  Kontakty  -------------------- */
+
+#contact {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.location {
+  width: 80%;
+  margin: auto;
+  padding: 80px 0;
+}
+
+.location iframe {
+  width: 100%;
+}
+
+.contact-logo {
+  opacity: 0.1;
+}

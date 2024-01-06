@@ -1,0 +1,124 @@
+@media (max-width: 600px) {
+  header {
+    position: relative;
+  }
+  nav {
+    display: none;
+    position: absolute;
+    top: 70px;
+    background-color: rgb(34, 37, 178);
+    width: 80%;
+  }
+  nav li ul {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .logo {
+    right: 250px;
+  }
+  .menu-icon {
+    display: block;
+    color: rgb(34, 37, 178);
+    font-size: 23px;
+  }
+
+  .welcome-title {
+    font-size: 18px;
+    color: rgb(34, 37, 178);
+  }
+
+  .hero-wrapper {
+    display: block;
+  }
+
+  .wrapper-ball {
+    margin-left: 90px;
+  }
+  .wrapper-ball img {
+    width: 200%;
+  }
+
+  .photogalerie-ball {
+    margin: 80px;
+    flex-direction: column;
+    height: 800px;
+  }
+
+  /* .container-form {
+
+} */
+  .contact,
+  .footer {
+    width: 120%;
+  }
+
+  .photo-wrapper {
+    width: 100%;
+  }
+
+  .photogalerie-ball {
+    height: auto;
+    gap: 10px;
+  }
+  .chasa-wrapper {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .dance-picture {
+    display: none;
+  }
+  .men-choir-wrapper,
+  .women-choir-wrapper,
+  .cimbal-music-wrapper,
+  .cimbal-music-zandar-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .shadow-lg {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .women-choir-wrapper {
+    margin-top: 0px;
+  }
+  .chasa,
+  .men-choir-picture,
+  .women-choir-picture,
+  .men-choir,
+  .women-choir,
+  .cimbal-music,
+  .cimbal-music-zandar {
+    width: 100%;
+  }
+  .music-picture img {
+    width: 100%;
+    margin-left: 0px;
+  }
+  .cimbal-music-zandar {
+    margin-right: 0px;
+  }
+  .zandar-picture img {
+    margin-left: 0px;
+    max-width: 100%;
+  }
+  .container-form {
+    width: 100%;
+  }
+
+  .contact-logo {
+    width: 70%;
+  }
+  .location iframe {
+    width: 100%;
+  }
+  .footer {
+    width: 100%;
+    padding: 0;
+  }
+}
